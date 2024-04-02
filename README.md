@@ -9,4 +9,4 @@ Este proyecto tiene el propósito de proporcionar un ejemplo práctico para la i
 ## Autor
 
 - Nombre del autor: Rodrigo Navarro Martienz
-- GitHub: [JuanPerezGitHub](https://github.com/rodrigonavarro19)
+- GitHub: [Rodrigo Navarro](https://github.com/rodrigonavarro19)
