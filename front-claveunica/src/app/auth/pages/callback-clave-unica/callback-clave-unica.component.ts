@@ -65,14 +65,10 @@ export default class CallbackClaveUnicaComponent implements OnInit{
       error: (error) =>{
         
         console.log(error);
-        setTimeout(function () {
-          
-          // Cerrar Sesión de Clave Única
-          const url = 'https://accounts.claveunica.gob.cl/api/v1/accounts/app/logout?redirect='+ encodeURIComponent(environment.uriLogoutClaveUnica); 
-          window.location.href = url;
-          
-        }, 3000);
-
+      
+        // Cerrar Sesión de Clave Única
+        const url = 'https://accounts.claveunica.gob.cl/api/v1/accounts/app/logout?redirect='+ encodeURIComponent(environment.uriLogoutClaveUnica); 
+        window.location.href = url;
         
       },
       

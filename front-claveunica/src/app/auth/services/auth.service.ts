@@ -20,14 +20,7 @@ export class AuthService {
 
     const url = `${this.baseUrl}/auth/loginClaveUnica`;
 
-    return this.http.post<LoginResponseInterface>( url, loginClaveUnicaInterface)
-    .pipe(
-      catchError(error => {
-        console.error('Error en la solicitud:', error);
-        
-        return throwError(() => error.error);
-      })  
-     );
+    return this.http.post<LoginResponseInterface>( url, loginClaveUnicaInterface);
   }
 
 }
