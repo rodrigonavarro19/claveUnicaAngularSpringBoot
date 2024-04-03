@@ -1,6 +1,18 @@
 export interface LoginResponseInterface {
-    run:               string;
-    nombres:           string;
-    apellidos:         string;
+    sub:      string;
+    RolUnico: ClaveUnicaRolUnico;
+    name:     ClaveUnicaName;
 
+}
+
+interface ClaveUnicaRolUnico{
+    numero: number;
+    DV:     string;
+    tipo:   string;
+    
+}
+
+interface ClaveUnicaName{
+    apellidos: string[];
+    nombres:   string[];
 }
